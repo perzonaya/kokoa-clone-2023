@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
 @import "reset.css";
 @import "variables.css";
 
@@ -9,8 +10,9 @@
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
-  height: 1000vh;
+  color: #2e363e;
   font-family: "Open Sans", sans-serif;
 }
