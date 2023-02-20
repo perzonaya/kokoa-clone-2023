@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://nomadcoders.co/kokoa-clone/lectures/1810 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="stylesheet" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/hack-subset.css"><link rel="stylesheet" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/SpoqaHanSansNeo.css"><link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png"><script type="text/javascript" async="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/ch-plugin-web.js.다운로드" charset="UTF-8"></script><script type="text/javascript" async="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/js"></script><script type="text/javascript" async="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/ec.js.다운로드"></script><script async="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/analytics.js.다운로드"></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/sdk.latest.js.다운로드"></script><title>#6.23 Find Screen Part Three (13:10) – 노마드 코더 Nomad Coders</title><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Watch now"><meta property="og:type" content="website"><meta property="og:url" content="https://nomadcoders.co/courses"><meta property="og:image" content="https://d1telmomo28umc.cloudfront.net/media/seo/graphDefault.jpg"><meta property="og:description" content="Watch now"><meta property="og:site_name" content="Nomad Coders"><meta property="og:locale" content="ko_KR"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="fb:admins" content="2366600330252017"><meta name="robots" content="index, follow"><meta name="twitter:description" content="Watch now"><meta name="twitter:image" content="graphDefault"><meta name="naver-site-verification" content="202966525a961e258ded0fcc0042857cea6d15f3"><link rel="stylesheet" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/hack-subset.css"><link rel="stylesheet" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/SpoqaHanSansNeo.css"><link rel="shortcut icon" sizes="16x16 32x32 64x64" href="https://nomadcoders.co/m.png"><meta property="og:title" content="#6.23 Find Screen Part Three (13:10) – 노마드 코더 Nomad Coders"><meta name="twitter:title" content="#6.23 Find Screen Part Three (13:10) – 노마드 코더 Nomad Coders"><meta name="next-head-count" content="23"><link rel="preload" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/e2831b2ab116d7ee.css" as="style"><link rel="stylesheet" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/e2831b2ab116d7ee.css" data-n-g=""><noscript data-n-css=""></noscript><script defer="" nomodule="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/polyfills-5cd94c89d3acac5f.js.다운로드"></script><script defer="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/8022.6714569fa44c87d3.js.다운로드"></script><script defer="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/1398.bc774d379d2efcc4.js.다운로드"></script><script defer="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/639.b6f221df3bc2b08a.js.다운로드"></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/webpack-efafd564fc62fbe9.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/framework-568b840ecff66744.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/main-6c74f9975bb3d3d8.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/_app-bf7ebb57332b24a4.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/9019-56985a3820aaaa7b.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/329-24f564c350fcc090.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/1514-000b99ee12dc103c.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/549-cf2dd2f0a4c2a20d.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/7407-8380f18d474aef0c.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/[id]-c12186161a92197f.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/_buildManifest.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/_ssgManifest.js.다운로드" defer=""></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/_middlewareManifest.js.다운로드" defer=""></script><meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A751Xsk4ZW3DVQ8WZng2Dk5s3YzAyqncTzgv+VaE6wavgTY0QHkDvUTET1o7HanhuJO8lgv1Vvc88Ij78W1FIAAAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjgwNjUyNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script type="text/javascript" async="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/f.txt"></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/1646468318926497" async=""></script><link rel="stylesheet" type="text/css" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/03814605215f56ab.css"><link as="script" rel="prefetch" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/5675-3352ad411ce51ed1.js.다운로드"><link as="script" rel="prefetch" href="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/lobby-fb86b51eac52fecc.js.다운로드"><style data-styled="active" data-styled-version="5.3.3"></style></head><body cz-shortcut-listen="true"><div id="__next" data-reactroot=""><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/theme.js.다운로드"></script><div class="bg-gray-50 dark:bg-gray-800 "><div class=" bg-gray-700 dark:bg-gray-900 fixed w-full py-2 shadow-md z-20 px-4 xl:pr-16 grid grid-cols-2 xl:grid-cols-5"><div class="flex items-center justify-center"><a href="https://nomadcoders.co/kokoa-clone/lobby"><svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8 text-gray-300 cursor-pointer"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a><span class=" bg-gray-500 dark:bg-gray-700 cursor-pointer mx-auto cur py-1 pl-1 pr-5 inline-flex items-center rounded-full text-white text-sm shadow-xl"><svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8 mr-3"><path d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" fill-rule="evenodd"></path></svg><span class="text-xs md:text-sm">Show Sidebar</span></span></div><div class="flex pl-16 justify-end md:justify-between items-center xl:col-span-4"><button class="hidden mr-3 bg-gray-500 dark:bg-gray-700 cursor-pointer py-1 px-5 sm:pl-1 sm:pr-5 md:inline-flex items-center rounded-full text-white text-sm shadow-xl"><svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8 sm:mr-3"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z" clip-rule="evenodd" fill-rule="evenodd"></path></svg><span class="hidden sm:block">Previous <span class="hidden lg:inline">Lecture</span></span></button><button class="bg-green-600 cursor-pointer py-1 px-5 sm:pl-1 sm:pr-5 inline-flex items-center rounded-full text-white text-sm shadow-xl"><svg fill="currentColor" viewBox="0 0 20 20" class="w-8 h-8 sm:mr-3"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" fill-rule="evenodd"></path></svg><span class="hidden sm:block">Complete <span class="hidden lg:inline">and Continue</span></span></button></div></div><div class="pt-12"><div class="col-span-5 pb-20 relative pt-10 px-5 xl:px-16 min-h-screen" style="width: 100%;"><div class="mb-10"><h3 class="text-xl font-medium mb-5 dark:text-white">#6.23 Find Screen Part Three (13:10)</h3><a href="https://github.com/nomadcoders/kokoa-clone-2020/commit/1326bbc4bf8c90e007a20e6723531048a47b47b1" target="_blank"><span class="bg-gray-700 py-1 pl-1 pr-5 inline-flex items-center rounded-full text-white text-sm shadow"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 fa-2x text-white mr-5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>Source Code →</span></a></div><div class="shadow-xl aspect-w-16   rounded overflow-hidden bg-white dark:bg-gray-700  relative"><div style="position: relative; padding-top: 56.25%;"><iframe src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhODAwNjBkZWMxNjUzZWMwNThiYzMyZjdkYThkNjZkMyIsImtpZCI6IjVjNzlhYWEzMmViMTNlMWNjOWNhNDg5NWQ3YTliYjg1Iiw.html" frameborder="0" allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture;" allowfullscreen="" style="position: absolute; inset: 0px; height: 100%; width: 100%;"></iframe></div></div><div class="mt-20 w-full "><div class="sm:hidden mb-20"><select aria-label="Selected tab" class="form-select block w-full"><option value="0">Comments</option><option value="1">Issues</option><option value="2">My Notes</option></select></div><div class="hidden sm:block mb-20"><nav class="flex"><span class=" px-3 py-2 font-medium cursor-pointer text-sm leading-5 rounded-md flex transition ease-in-out duration-150  bg-blue-500 dark:bg-white dark:text-gray-800 text-white shadow-md focus:outline-none focus:bg-gray-300" aria-current="page"><svg fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5 mr-2"><path d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>Comments (48)</span><span class="ml-4 px-3 py-2 font-medium cursor-pointer text-sm leading-5 rounded-md flex transition ease-in-out duration-150 focus:text-gray-800 shadow-none dark:bg-transparent dark:border dark:border-white dark:text-white bg-gray-200 focus:bg-gray-200" aria-current="page"><svg fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5 mr-2"><path d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>Issues (4)</span><span class="ml-4 px-3 py-2 font-medium cursor-pointer text-sm leading-5 rounded-md flex transition ease-in-out duration-150 focus:text-gray-800 shadow-none dark:bg-transparent dark:border dark:border-white dark:text-white bg-gray-200 focus:bg-gray-200" aria-current="page"><svg fill="currentColor" viewBox="0 0 20 20" class="w-5 h-5 mr-2"><path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path></svg>My Notes (0)</span></nav></div><div class="w-full max-w-screen-md mx-auto flex flex-col items-center "><div class="w-full "><div class="rounded-md bg-blue-50    p-4 mb-14"><div class="flex"><div class="flex-shrink-0"><svg class="h-5 w-5 text-blue-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg></div><div class="undefined ml-3 flex-1 md:flex md:justify-between "><p class="text-sm leading-5 text-blue-700    undefined">이 섹션에서 간단한 댓글을 남기세요.<br>중요한 질문 및 에러가 있다면, 이슈를 생성해주세요</p></div></div></div></div><div class="flex w-full items-start mb-20"><div class="w-16 relative"><div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-gray-100 "><svg class="w-full h-full text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_4.svg" class="absolute  w-6 -mt-6 right-0 "></div><div class="ml-5 w-full flex flex-col items-end"><div class="rounded-md overflow-hidden pb-3 pt-1 bg-white dark:bg-transparent dark:border-white dark:border shadow-md w-full"><textarea class="sc-c4fbe220-0 cpECmW w-full focus:outline-none focus:ring-0 border-none hangug placeholder-gray-500 dark:placeholder-gray-400 dark:text-white dark:bg-transparent resize-none h-20" placeholder="시작합니다! 재미있어요!"></textarea></div><div class="flex items-center justify-end w-full mt-5"><button type="button" class="cursor-not-allowed dark:opacity-50 ml-3 inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-blue-600 dark:bg-white dark:text-gray-800 dark:border dark:border-white transition ease-in-out duration-150">Post Comment</button></div></div></div><div class="-mt-10 mb-14 w-full flex justify-center"><div class="flex justify-between items-center"><div><span class="text-sm text-gray-500 dark:text-white font-medium mr-2">sort by:</span><button class="text-blue-500 font-medium dark:text-white text-sm py-px px-2 mr-1 focus:outline-none rounded-md  transition-colors "><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire fa-w-12 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"></path></svg> Popular</button><button class=" text-gray-400 dark:hover:text-white  text-sm py-px px-2 mr-1 focus:outline-none rounded-md  transition-colors "><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bolt" class="svg-inline--fa fa-bolt fa-w-10 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M296 160H180.6l42.6-129.8C227.2 15 215.7 0 200 0H56C44 0 33.8 8.9 32.2 20.8l-32 240C-1.7 275.2 9.5 288 24 288h118.7L96.6 482.5c-3.6 15.2 8 29.5 23.3 29.5 8.4 0 16.4-4.4 20.8-12l176-304c9.3-15.9-2.2-36-20.7-36z"></path></svg> New</button></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/extreme93" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/extreme93-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_7.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/extreme93"><span class="font-medium text-gray-700 dark:text-gray-100">extreme93</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 years ago</span></div><div>'21 1.27<br><br>- HTML 코드에선 대문자를 나타내려고 해도, 우선 소문자로만 작성한다. 대문자는 디자인적인 요소이기 때문에, CSS 파일에서 작성해줘야 한다.<br>- text-transform: uppercase; 대문자로 만들기.</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">14</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/30235" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/lexkun" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/lexkun-1608078123.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_4.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/lexkun"><span class="font-medium text-gray-700 dark:text-gray-100">lexkun</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 years ago</span></div><div>니꼬선생님~<br>I have a quick simple question for you.<br>When you are putting 0 and 5px on the margin value like on 12:15, I saw that you didn't put any units at the end of the 0.<br>If I have a value of 0, do I not have to put any units?<br>I've seen you doing this on your previous videos too, but I just wanted to make sure so I don't make any mistakes on the future.<br>Thank you!</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">6</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/21319" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div><div class="w-10/12 mt-2"><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/serranoarevalo" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/serranoarevalo-1670921025.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_12.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/serranoarevalo"><span class="font-medium text-gray-700 dark:text-gray-100">serranoarevalo</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 years ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@lexkun</mark> Yea, 0 or 0px or 0em or 0rem or 0%<br>It's all 0 :)</div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/mvps" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/0406june-1610522876.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_7.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/mvps"><span class="font-medium text-gray-700 dark:text-gray-100">mvps</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 years ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@lexkun</mark> 덕분에 의문점 하나 해결합니다!<br>0은 뒤에 단위를 붙이지않아도 결국 전부 0이네요. </div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/tail" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/prok-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_6.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/tail"><span class="font-medium text-gray-700 dark:text-gray-100">tail</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 years ago</span></div><div>번역기를 돌려보자!!<br><br><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@lexkun</mark> 간단한 질문이 있습니다.<br>12시 15분처럼 0과 5px를 마진값에 붙일 때 0 끝에 단위가 하나도 없는 걸 봤어요.<br>값이 0이면 단위를 넣지 않아도 됩니까?<br>이전 영상에서도 이런 모습을 보긴 했지만, 앞으로는 실수하지 않도록 확실히 하고 싶었어요.<br>감사합니다! </div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/hyeoksss" target="_blank"><div class="self-start w-16 hidden md:block relative"><div class="w-full h-full rounded-full overflow-hidden flex items-center justify-center bg-gray-100 "><svg class="w-full h-full text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"></path></svg></div><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_8.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/hyeoksss"><span class="font-medium text-gray-700 dark:text-gray-100">hyeoksss</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">1 year ago</span></div><div>  처음에는 무작정 따라하다가 이제는 혼자 먼저 해보고 그 다음에 강의 들으면서 피드백 받는 느낌으로 하고 있어요.<br> 시간은 오래 걸리지만 제가 스스로 쓴 코드를 어떻게 하면 더 깔끔하게 쓸 수 있는지 배우니 더 재미있네요.  <br> 항상 좋은 강의 감사드립니다!!<br> </div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">4</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/67152" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div><div class="w-10/12 mt-2"><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/serranoarevalo" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/serranoarevalo-1670921025.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_12.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/serranoarevalo"><span class="font-medium text-gray-700 dark:text-gray-100">serranoarevalo</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">1 year ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@zagalchi</mark>  화이팅!</div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/aranlee219" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/aranlee219-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_4.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/aranlee219"><span class="font-medium text-gray-700 dark:text-gray-100">aranlee219</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">1 year ago</span></div><div>오픈채팅을 작성하니까 잘려서 스크롤이 안내려가요! 어떻게 해야되나요...?</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">3</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/61665" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div><div class="w-10/12 mt-2"><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/mingsound" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/mingsound21-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_6.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/mingsound"><span class="font-medium text-gray-700 dark:text-gray-100">mingsound</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">1 year ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@aranlee219</mark> <br>body {<br>  height: 1000vh;<br>}<br>라고 일시적으로 body의 height를 길게 늘려주시면 스크롤이 생겨요!</div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/shgdx12" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/NaSeonghyen-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_6.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/shgdx12"><span class="font-medium text-gray-700 dark:text-gray-100">shgdx12</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">6 months ago</span></div><div>2022.08.12 수강완료<br><br>처음에는 무조건 copy였는데<br>챌린지 하면서 같이 듣다 보니 최소 내용은 조금이라도 다르게 하고 반복적으로 나오는 부분은 변수처리 하게되는 것 같습니다! 중간중간 강의에서 내주시는 숙제도 복습하는데에 많은 도움이 되었습니다.<br></div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">2</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/99254" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div><div class="w-10/12 mt-2"><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/serranoarevalo" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/serranoarevalo-1670921025.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_12.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/serranoarevalo"><span class="font-medium text-gray-700 dark:text-gray-100">serranoarevalo</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">6 months ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@shgdx12</mark>  Don't forget to join the challenge!</div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/oof" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/oof-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_6.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/oof"><span class="font-medium text-gray-700 dark:text-gray-100">oof</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 weeks ago</span></div><div>니코샘 최고, 강의 안보고 find 다 만들었어요!</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">0</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/120815" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div><div class="w-10/12 mt-2"><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/serranoarevalo" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/serranoarevalo-1670921025.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_12.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/serranoarevalo"><span class="font-medium text-gray-700 dark:text-gray-100">serranoarevalo</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 weeks ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@oof</mark>  Proud of you! 💖💖💖</div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/avakray" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/rakunbam02-avatar.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_6.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/avakray"><span class="font-medium text-gray-700 dark:text-gray-100">avakray</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">1 month ago</span></div><div>저는 img class에 user-component__avatar를 추가함으로써 css를 더 적지 않았는데요, user-component__avatar에 들어가있던 margin-right: 20px; 때문에 img와 text(802 mem~)의 간격이 엄청 멀리 떨어져있었습니다.<br><br>하여 .open-post__members img{ margin-right: 7px;} 이 코드를 하나 적어주어 간격을 재조정 하였는데 여기서 일어나는 문제점은 따로 없을까요? <br><br>궁금 포인트 정리!<br>7px이 적용된 후 20px이 적용되어 간격이 멀리 떨어지는 오류가 생길 수도 있는지 궁금합니다.</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">0</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/115343" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/shj1127" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shj1127-1670382160.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_4.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/shj1127"><span class="font-medium text-gray-700 dark:text-gray-100">shj1127</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">2 months ago</span></div><div>22.12.7 완료</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">0</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/112859" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/gksrnr66" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/gksrnr66-1663419117.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_4.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/gksrnr66"><span class="font-medium text-gray-700 dark:text-gray-100">gksrnr66</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">5 months ago</span></div><div>contents를 적을 때도 소문자로 적는 이유: 대문자는 디자인적 요소이기 때문에 css에서 대문자로 변경 가능하기 때문이다. ( HTML : 소문자 , CSS: 대문자변경 )</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">0</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/102663" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div><div class="w-full mb-5 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/gksrnr66" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/gksrnr66-1663419117.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_4.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/gksrnr66"><span class="font-medium text-gray-700 dark:text-gray-100">gksrnr66</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">5 months ago</span></div><div>처음엔 같이 따라치면서 이해하기가 바빴고 스펠링 하나틀려서 하루종일 붙잡고 왜 안돼?!!! 이럴 때도 있었는데 결국 진도가 좀 느려도 분명하게 확실히 이해하고 넘어가니깐 이제 openchat 만들 때도 아 이거 했던거지! 하고 혼자 슉슉만들고 동영상으로 정답확인 하듯 공부하게 되네요<br>그리고 확실히 변수를 만드니깐 완전 편해요!<br><br>나 코딩을 좋아할지도..?</div></div><div class="flex flex-col self-center"><button class="flex flex-col border-2 rounded-md items-center justify-center cursor-pointer pb-2 text-gray-700 dark:text-gray-300" style="min-width: 44px;"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-up" class="svg-inline--fa fa-angle-up fa-w-10 fa-lg  dark:text-white opacity-50" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"></path></svg><span class="leading-5 -mt-1 font-medium ">0</span></button><div class="h-px my-2 w-full"></div><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button><a href="https://nomadcoders.co/kokoa-clone/lectures/1810/comments/102659" target="_blank" class="ml-3"><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a></div></div></div><div class="flex justify-end items-center w-full"></div></div></div><div class="w-10/12 mt-2"><div class="w-full mb-2 flex flex-col items-end"><div class="w-full mb-3 flex items-start"><a href="https://nomadcoders.co/users/serranoarevalo" target="_blank"><div class="self-start w-16 hidden md:block relative"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/serranoarevalo-1670921025.jpg" class="w-full rounded-full"><img src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/shield_12.svg" class="absolute  w-6 -mt-6 right-0 "></div></a><div class="w-full ml-5 flex flex-col items-end"><div class=" bg-white dark:bg-gray-700 dark:text-gray-100 shadow rounded-md px-5 pt-3 pb-5 w-full flex justify-between "><div class="flex flex-col break-normal hantext w-full mr-8"><div class="text-sm mb-2 "><a href="https://nomadcoders.co/users/serranoarevalo"><span class="font-medium text-gray-700 dark:text-gray-100">serranoarevalo</span></a><span class="text-gray-400 dark:text-gray-400 ml-2">5 months ago</span></div><div><mark class="text-blue-500 bg-white dark:bg-transparent dark:text-blue-400">@gksrnr66</mark> Yes! 화이팅! 화이팅!</div></div><div class="flex flex-col "><div class="flex"><button class=""><svg fill="currentColor" viewBox="0 0 20 20" class="w-4 h-4"><path d="M7.707 3.293a1 1 0 010 1.414L5.414 7H11a7 7 0 017 7v2a1 1 0 11-2 0v-2a5 5 0 00-5-5H5.414l2.293 2.293a1 1 0 11-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></button></div></div></div><div class="flex justify-end items-center w-full"></div></div></div></div></div></div><span class="underline text-blue-500 dark:text-blue-100 font-medium mt-20 block cursor-pointer">Load more comments</span></div></div></div></div></div><script async="" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/js(1)"></script><script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-604270696');</script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5TT768Z');</script></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/[course]/lectures/[id]","query":{},"buildId":"CzSW3qybeNXyNXG2b8VIA","nextExport":true,"autoExport":true,"isFallback":false,"dynamicIds":[78022,51398,90639],"scriptLoader":[]}</script><script id="mcjs">
+              !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/a99b43453db5050f1f26b2744/a79f1416d426a25837b70ba6d.js");
+            </script><script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            
+          </script><noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1646468318926497&amp;ev=PageView&amp;noscript=1"/></noscript><next-route-announcer><p aria-live="assertive" id="__next-route-announcer__" role="alert" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; overflow-wrap: normal;">#6.22 Find Screen Part Two (06:52) – 노마드 코더 Nomad Coders</p></next-route-announcer><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><div id="ch-plugin" class="notranslate"><div id="ch-plugin-script" style="display:none" class="ch-messenger-hidden"><iframe id="ch-plugin-script-iframe" style="position:relative!important;height:100%!important;width:100%!important;border:none!important;" src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/saved_resource.html"></iframe></div><style data-styled="active" data-styled-version="5.1.1"></style><div style="display: block !important;"></div></div><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/7379-f0f55b8739b5477d.js.다운로드"></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/5675-3352ad411ce51ed1.js.다운로드"></script><script src="./#6.23 Find Screen Part Three (13_10) – 노마드 코더 Nomad Coders_files/lobby-fb86b51eac52fecc.js.다운로드"></script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script><script data-nscript="lazyOnload">(function() {
+            var w = window;
+            if (w.ChannelIO) {
+              return
+            }
+            var d = window.document;
+            var ch = function() {
+              ch.c(arguments);
+            };
+            ch.q = [];
+            ch.c = function(args) {
+              ch.q.push(args);
+            };
+            w.ChannelIO = ch;
+            function l() {
+              if (w.ChannelIOInitialized) {
+                return;
+              }
+              w.ChannelIOInitialized = true;
+              var s = document.createElement('script');
+              s.type = 'text/javascript';
+              s.async = true;
+              s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+              s.charset = 'UTF-8';
+              var x = document.getElementsByTagName('script')[0];
+              x.parentNode.insertBefore(s, x);
+            }
+            if (document.readyState === 'complete') {
+              l();
+            } else if (window.attachEvent) {
+              window.attachEvent('onload', l);
+            } else {
+              window.addEventListener('DOMContentLoaded', l, false);
+              window.addEventListener('load', l, false);
+            }
+            window.cBoot = true;
+            ChannelIO('boot', {
+              "pluginKey": "8244da16-034b-4ea9-b76b-68d8fccc4561"
+            });
+          })();
+          </script></body></html>

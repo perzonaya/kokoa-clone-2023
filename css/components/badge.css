@@ -1,0 +1,11 @@
+.badge {
+  background-color: tomato;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px; /* 원으로 만들때는 사각형의 지름 절반으로 30이면 15로 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+}
