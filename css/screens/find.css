@@ -56,6 +56,15 @@
   margin-bottom: 7px;
 }
 
+.open-post__photo {
+  position: relative;
+}
+.open-post__photo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+
 .open-post__heshtags {
   text-transform: uppercase; /*소문자를 대문자로 만드는 방법*/
   opacity: 0.6;
@@ -89,8 +98,19 @@
   color: #ffb0e0;
 }
 
-.open-post__photo img {
-  width: 120px;
-  height: 120px;
-  border-radius: 10px;
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
 }
