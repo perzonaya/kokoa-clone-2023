@@ -24,3 +24,16 @@
   position: absolute;
   top: 25px;
 }
+/* 설정 아이콘이 뱅글뱅글 도는 애니메이션 */
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: rotateCog 3s ease-in-out infinite;
+}
