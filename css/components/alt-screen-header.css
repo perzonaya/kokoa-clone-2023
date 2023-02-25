@@ -5,14 +5,16 @@
   align-items: center;
   justify-content: center;
 }
-.alt-header__title {
-  font-size: 28px;
-  font-weight: 600;
-}
 
 .alt-header__column {
   width: 33%;
 }
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+/* 채팅창 화면의 니꼬 부분을 3등분해서 정렬하는 일종의 치트키 */
 
 .alt-header__column:first-child {
   margin-right: auto;
@@ -27,6 +29,8 @@
   display: flex;
   justify-content: flex-end;
 }
+/*여기까지  채팅창 화면의 니꼬 부분 정렬 치트키 */
+
 .alt-header__column span:last-child {
   margin-left: 20px;
 }
